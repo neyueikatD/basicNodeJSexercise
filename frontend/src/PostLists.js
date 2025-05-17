@@ -24,6 +24,7 @@ export default function PostLists() {
         };
         fetchData();
     }, []);
+    
     if (loading) return <p>Loading posts...</p>;
     if (error) return <p>{error}</p>;
     return (
